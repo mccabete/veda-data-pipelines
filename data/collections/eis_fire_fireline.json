@@ -6,6 +6,12 @@
          "rel": "child",
          "type": "application/json",
          "href": "https://firenrt.delta-backend.com/collections/public.eis_fire_fireline"
+      },
+      {
+         "rel": "external",
+         "href": "https://nasa-impact.github.io/veda-docs/example-notebooks/wfs.html",
+         "type": "application/pdf",
+         "title": "Data Documentation and Examples"
       }
    ],
    "title":"Active Fire Line",
@@ -32,8 +38,12 @@
          "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
       }
    },
+   "sci:citation": "Chen, Y. et al. California wildfire spread derived using VIIRS satellite observations and an object-based tracking system. Sci Data 9, 249 (2022).",
    "license":"public-domain",
    "stac_version": "1.0.0",
+   "stac_extensions": [
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
    "dashboard:is_periodic": true,
    "dashboard:time_density": "day"
 }
